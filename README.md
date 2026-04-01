@@ -5,6 +5,12 @@ This repository provides the implementation of the **Piecewise-Linear Trend Extr
 
 The code demonstrates how PLTE can be applied to MEMS acceleration time series under **irregular sampling conditions** and in the presence of **local missing segments**, without requiring interpolation or resampling.
 
+The CSV file contains actual test data; you can replace it with your own time-series data.
+
+In my default raw data, the parsed column is 'x', and the window is set to 1 minute.
+
+In this version, the maximum time-series missing data should not exceed your window time.
+
 ---
 
 ## Key Features
@@ -17,7 +23,8 @@ The code demonstrates how PLTE can be applied to MEMS acceleration time series u
 
 ## Repository Structure
 - `data_example/`  
-  Minimal example dataset for demonstration  
+  Minimal example dataset for demonstration
+
 
 - `scripts/`  
   - `compare_figures.py` — generates representative comparisons (Figure 1 & Figure 2)  
